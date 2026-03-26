@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Switch-Dash-Blade // Emmanuel Ansong</title>
+  <meta name="description" content="Documentation page for Switch-Dash-Blade.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="/home/style.css">
+  <link rel="stylesheet" href="project-page.css">
+</head>
+<body>
+
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+  <canvas id="bg-canvas"></canvas>
+
+  <nav id="nav">
+    <div class="nav-logo"><a href="/home/index.html">Creative Portfolio<span></span></a></div>
+    <ul class="nav-links">
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+    </ul>
+    <a href="/home/index.html" class="nav-cta">Back to Home</a>
+  </nav>
+
+  <section id="hero" class="project-hero">
+    <div class="wrap">
+      <div class="hero-tag">Project Documentation</div>
+
+      <div class="project-hero-grid">
+        <div class="project-hero-copy reveal">
+          <div class="section-tag">// project page</div>
+          <h1>Switch<em>Dash</em>Blade</h1>
+          <p class="hero-sub">
+            A browser-based <strong>top-down dungeon crawler</strong> built in <strong>Unity</strong> where the
+            player fights through enemy-filled rooms using a <strong>weapon system that changes over time</strong>.
+            The project explores how <strong>procedural weapon generation</strong> and <strong>dynamic difficulty
+            adjustment</strong> can be combined to keep combat readable, varied, and challenging, while still
+            delivering a polished <strong>2D action game</strong> experience for desktop and web players.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#overview" class="btn-primary">Read Documentation</a>
+            <a href="https://github.com/HLeitch/Group29-PCG" target="_blank" class="btn-ghost">View Source Code</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-n">2021</span>
+              <span class="stat-l">Year Built</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-n">Unity</span>
+              <span class="stat-l">Engine</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-n">C#</span>
+              <span class="stat-l">Core Stack</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-hero-media reveal">
+          <div class="media-frame">
+            <div class="media-placeholder"><img src="/home/assets/swd3.jpg" alt="Switch-Dash-Blade Image"></div>
+          </div>
+          <div class="about-badge">
+            <strong>Status</strong>
+            Completed
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="overview">
+    <div class="wrap">
+      <div class="section-tag">// quick overview</div>
+      <h2>What this project is about?</h2>
+      <div class="section-divider"></div>
+
+      <div class="doc-grid">
+
+        <article class="doc-card reveal">
+          <div class="card-title">Summary</div>
+          <p class="doc-copy">
+            <strong>Switch-Dash-Blade</strong> is a <strong>2D top-down dungeon crawler</strong> in which the player
+            explores hostile rooms, avoids traps, defeats enemies, and progresses through a series of
+            increasingly challenging levels. The core design twist is a <strong>procedurally generated weapon
+            system</strong> that changes form and attributes during play, giving each combat phase a different
+            feel and forcing the player to adapt.
+
+            The project was designed to investigate how <strong>procedural content generation</strong> and
+            <strong>dynamic difficulty adjustment</strong> could be expressed through a single combat mechanic.
+            Instead of generating the entire game world, the team focused on <strong>weapon generation</strong> as
+            the main system, using player performance metrics to influence the type, hilt, blade, speed,
+            and damage of newly generated weapons.
+          </p>
+        </article>
+
+        <article class="doc-card reveal">
+          <div class="card-title">My Role</div>
+          <p class="doc-copy">
+            I contributed as part of a <strong>six-person development team</strong>, helping deliver a playable
+            Unity build through <strong>feature development</strong>, <strong>iteration</strong>, <strong>testing</strong>, and
+            <strong>bug fixing</strong>. My work sat within a collaborative Agile workflow where the team split
+            implementation into focused areas, reviewed progress in weekly scrums, and integrated code
+            through shared version control.
+
+            In addition to core development support, I contributed to <strong>gameplay polish</strong> and
+            <strong>maintenance tasks</strong>, including fixes connected to environmental interactions and level
+            usability. I also participated in project planning, reviews, testing, and release refinement,
+            helping the team move from early prototypes to a public <strong>itch.io release</strong>.
+          </p>
+        </article>
+
+        <article class="doc-card reveal">
+          <div class="card-title">Core Tools</div>
+          <div class="skills-list">
+            <span class="skill-tag">Unity Engine</span>
+            <span class="skill-tag">C# Programming</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Procedural Generation</span>
+            <span class="skill-tag">Dynamic Difficulty Adjustment</span>
+            <span class="skill-tag">itch.io</span>
+          </div>
+        </article>
+
+        <article class="doc-card reveal">
+          <div class="card-title">Key Outcome</div>
+          <p class="doc-copy">
+            The final project delivered a <strong>fully playable browser and Windows build</strong> featuring
+            <strong>procedurally generated weapons</strong>, <strong>adaptive difficulty</strong>, multi-room dungeon
+            traversal, enemy encounters, traps, fog of war, menus, UI, and public playtest feedback.
+            By release, the team had moved from a broad procedural generation concept to a clearer,
+            more focused experience where <strong>weapon switching became the game’s defining system</strong>.
+
+            The strongest outcome was proving that a relatively small team could build a polished
+            <strong>combat-driven prototype</strong> while also applying structured software engineering practices,
+            iterative testing, and public release feedback to improve balance and usability.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="wrap">
+      <div class="section-tag">// feature breakdown</div>
+      <h2>Systems & highlights</h2>
+      <div class="section-divider"></div>
+
+      <div class="feature-stack">
+
+        <article class="feature-panel reveal">
+          <div class="card-tags">
+            <span class="card-tag">Gameplay</span>
+            <span class="card-tag year-tag">Core Loop</span>
+          </div>
+          <div class="card-title">Adaptive dungeon combat</div>
+          <p class="card-desc">
+            The main gameplay loop centres on <strong>room-by-room dungeon combat</strong>. Players move through
+            dark, trap-filled levels, clear enemies, pull levers to unlock progression, and survive long
+            enough to benefit from their next generated weapon. Combat is intentionally readable and
+            arcade-like, with <strong>light and heavy attacks</strong>, enemy pressure, room-based pacing, and
+            environmental hazards such as <strong>spike traps</strong> and <strong>arrow traps</strong>.
+
+            This structure gives the game a strong sense of progression while ensuring that every new room
+            creates a short tactical problem for the player to solve.
+          </p>
+        </article>
+
+        <article class="feature-panel reveal">
+          <div class="card-tags">
+            <span class="card-tag">Tech</span>
+            <span class="card-tag accent-tag">Architecture</span>
+          </div>
+          <div class="card-title">Procedural weapons with dynamic difficulty</div>
+          <p class="card-desc">
+            The project’s standout system is its <strong>procedural weapon generation pipeline</strong>. Every
+            combat cycle, the game evaluates player performance using metrics such as
+            <strong>damage dealt</strong>, <strong>enemies killed</strong>, <strong>time to clear rooms</strong>, and
+            <strong>change in health</strong>. These values feed into a <strong>dynamic difficulty adjustment</strong>
+            model that determines the next weapon’s type and overall power.
+
+            Weapon parts are generated in a <strong>component-based way</strong>, allowing the game to mix
+            attributes like damage, speed, and presentation while keeping output balanced. This made
+            the procedural system more than a cosmetic gimmick: it actively shaped how the player
+            approached each stretch of combat.
+          </p>
+        </article>
+
+        <article class="feature-panel reveal">
+          <div class="card-tags">
+            <span class="card-tag">UX</span>
+            <span class="card-tag">Polish</span>
+          </div>
+          <div class="card-title">Readability, feedback & exploration</div>
+          <p class="card-desc">
+            A major focus of polish was making the game’s systems <strong>legible to players</strong>. The UI
+            communicates health and generated weapon stats, while <strong>fog of war</strong> hides unexplored
+            rooms to improve tension and pacing. Sound, menus, movement tuning, and enemy adjustments
+            were introduced late in development to improve the game feel and make the build more release-ready.
+
+            Public and in-house playtesting helped identify issues around difficulty, visibility, collision,
+            and progression. Those iterations made the final build feel more cohesive and much easier to
+            understand moment to moment.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="process">
+    <div class="wrap">
+      <div class="section-tag">// development process</div>
+      <h2>How it's built</h2>
+      <div class="section-divider"></div>
+
+      <div class="process-layout">
+        <div class="project-sidebar reveal">
+          <div class="sidebar-block">
+            <div class="link-label">Project Info</div>
+            <ul class="meta-list">
+              <li><span>Genre</span><strong>Top-Down Dungeon Crawler</strong></li>
+              <li><span>Platform</span><strong>Web / Windows PC</strong></li>
+              <li><span>Team Size</span><strong>6</strong></li>
+              <li><span>Duration</span><strong>University Team Project</strong></li>
+            </ul>
+          </div>
+
+          <div class="sidebar-block">
+            <div class="link-label">Focus Areas</div>
+            <p class="doc-copy">
+              Procedural weapons, dynamic difficulty balancing, collaborative Unity development,
+              release iteration, gameplay polish, and production workflow.
+            </p>
+          </div>
+        </div>
+
+        <div class="process-content">
+
+          <article class="timeline-item reveal visible-static">
+            <div class="timeline-date">Phase 1</div>
+            <div class="timeline-title">Planning & team structure</div>
+            <div class="timeline-body">
+              The team began by outlining the game’s core direction through a blend of
+              <strong>Scrum-inspired Agile development</strong> and a <strong>playcentric design process</strong>.
+              Early targets were organised through dependency diagrams and SMART objectives, allowing
+              the project to map out what needed to exist before other systems could be built.
+
+              Although the original plan leaned toward a <strong>Waterfall-style schedule</strong>, the team quickly
+              recognised that a strict sequential process was inefficient for collaborative game development.
+              Work shifted into a more parallel, iterative model where members could prototype, test, and
+              integrate systems at the same time.
+            </div>
+          </article>
+
+          <article class="timeline-item reveal visible-static">
+            <div class="timeline-date">Phase 2</div>
+            <div class="timeline-title">Prototype & core systems</div>
+            <div class="timeline-body">
+              Development first focused on creating a <strong>working playable game loop</strong> before expanding
+              the procedural systems. The team built player movement, enemy encounters, room logic,
+              UI, health, and basic levels inside <strong>Unity using C#</strong>. Once the core combat structure was
+              stable, attention shifted to the <strong>procedural weapon generation system</strong>.
+
+              Rather than procedurally generating every possible system, the project narrowed its scope to
+              make weapons the centrepiece. This allowed the team to develop a more convincing and
+              mechanically meaningful implementation of procedural generation.
+            </div>
+          </article>
+
+          <article class="timeline-item reveal visible-static">
+            <div class="timeline-date">Phase 3</div>
+            <div class="timeline-title">Balancing, testing & bug fixing</div>
+            <div class="timeline-body">
+              Testing mixed <strong>manual regression testing</strong>, <strong>playtesting</strong>, and
+              <strong>compatibility checks</strong> across different resolutions and builds. Because many game systems
+              produced behaviour rather than simple return values, the team leaned heavily on in-engine
+              validation, logging, and repeated hands-on testing rather than relying entirely on unit tests.
+
+              This process surfaced issues such as enemy collisions, spike trap layering, UI layout concerns,
+              and progression bugs. Public feedback also pushed the team to refine movement feel, add more
+              useful attacks, improve audio, and smooth the experience between beta and full release.
+            </div>
+          </article>
+
+          <article class="timeline-item reveal visible-static">
+            <div class="timeline-date">Phase 4</div>
+            <div class="timeline-title">Release & evaluation</div>
+            <div class="timeline-body">
+              The project was released first as a <strong>beta build on itch.io</strong>, followed by a fuller public
+              release after bug fixing and gameplay improvements. This release pipeline let the team gather
+              real user feedback, triage issues by <strong>priority</strong> and <strong>difficulty</strong>, and improve the build
+              through targeted fixes.
+
+              Looking back, the project showed the value of keeping scope focused, adapting process early,
+              and using public feedback to shape the final product. The clearest next step would be expanding
+              the procedural system further with more weapon modifiers, enemy variety, and additional build
+              depth while preserving the readability of the current combat loop.
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="wrap">
+      <div class="section-tag">// screenshots & media</div>
+      <h2>Gallery</h2>
+      <div class="section-divider"></div>
+
+      <div class="gallery-grid">
+        <div class="gallery-card reveal">
+          <div class="gallery-media"><img src="/home/assets/swd1.PNG" alt="⚔️"></div>
+          <div class="gallery-caption">Top-down combat encounters with procedurally generated weapons and enemy pressure.</div>
+        </div>
+        <div class="gallery-card reveal">
+          <div class="gallery-media"><img src="/home/assets/swd2.PNG" alt="⚔️"></div>
+          <div class="gallery-caption">Dungeon rooms featuring fog of war, traps, levers, and progression-based level flow.</div>
+        </div>
+        <div class="gallery-card reveal">
+          <div class="gallery-media"><img src="/home/assets/swd3.jpg" alt="⚔️"></div>
+          <div class="gallery-caption">Testing, balancing, and release iteration driven by playtest feedback and bug reports.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="links">
+    <div class="wrap">
+      <div class="contact-inner project-links">
+        <div class="contact-text reveal">
+          <div class="section-tag">// project links</div>
+          <h2>Explore the build.</h2>
+          <p>
+            Here are some links related to the project
+          </p>
+        </div>
+
+        <div class="contact-links reveal">
+          <a href="https://github.com/HLeitch/Group29-PCG" target="_blank" class="contact-link-item">
+            <div class="link-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" class="gh-icon"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </div>
+            <div class="link-info">
+              <div class="link-label">Source Code</div>
+              <div class="link-value">GitHub repository</div>
+            </div>
+            <div class="link-arrow">↗</div>
+          </a>
+
+          <a href="https://youtu.be/D5XGZrtlHl0" target="_blank" class="contact-link-item">
+            <div class="link-icon">▶</div>
+            <div class="link-info">
+              <div class="link-label">Demo Video</div>
+              <div class="link-value">Watch on YouTube</div>
+            </div>
+            <div class="link-arrow">↗</div>
+          </a>
+
+          <a href="https://group-29.itch.io/procedural-weapon-generation-game" target="_blank" class="contact-link-item">
+            <div class="link-icon">🎮</div>
+            <div class="link-info">
+              <div class="link-label">Playable Build</div>
+              <div class="link-value">Play on itch.io</div>
+            </div>
+            <div class="link-arrow">↗</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Creative Portfolio
+    &nbsp;|&nbsp; <span>Emmanuel Ansong</span> &copy; 2026
+  </footer>
+
+  <script src="/home/script.js"></script>
+</body>
+</html>
