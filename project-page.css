@@ -16,6 +16,7 @@
 
 .project-hero-media {
   position: relative;
+  min-width: 600px;
 }
 
 .media-frame {
@@ -224,7 +225,9 @@
   border: none;
   pointer-events: none;
 }
-
+.pdf-filename {
+  color: white;
+}
 .media-overlay {
   position: absolute;
   inset: auto 1rem 1rem 1rem;
