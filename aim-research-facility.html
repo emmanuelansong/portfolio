@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>A.I.M. Research Facility - Hero Shooter Level Design // Emmanuel Ansong</title>
+  <meta name="description" content="Documentation page for Switch-Dash-Blade.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="project-page.css">
+</head>
+<body>
+
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+  <canvas id="bg-canvas"></canvas>
+
+  <nav id="nav">
+    <div class="nav-logo"><a href="index.html">Creative Portfolio<span></span></a></div>
+    <ul class="nav-links">
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#links">Links</a></li>
+    </ul>
+    <a href="index.html" class="nav-cta">Back to Home</a>
+  </nav>
+
+  <section id="hero" class="project-hero">
+  <div class="wrap">
+    <div class="hero-tag">Project Documentation</div>
+
+    <div class="project-hero-grid">
+      <div class="project-hero-copy reveal">
+        <div class="section-tag">// project page</div>
+        <h1>A.I.M. Research Facility <em>Hero Shooter</em> Level Design</h1>
+        <p class="hero-sub">
+          A stylized <strong>domination map concept</strong> built in <strong>Unreal Engine 5</strong>, designed for a
+          <strong>5v5 hero shooter</strong> inspired by <strong>Marvel Rivals</strong>. The project explores how a
+          <strong>single central objective</strong>, <strong>multi-route rotations</strong>, <strong>controlled verticality</strong>,
+          and <strong>clear combat readability</strong> can support repeated team fights around one point.
+          The level combines <strong>gameplay-first blockout thinking</strong>, <strong>route-framing</strong>,
+          and <strong>environmental storytelling</strong> inside an A.I.M. sci-fi facility setting.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#overview" class="btn-primary">Read Documentation</a>
+          <a href="#layout" class="btn-ghost">View Map Breakdown</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-n">2026</span>
+            <span class="stat-l">Year</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-n">Unreal Engine 5</span>
+            <span class="stat-l">Engine</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-n">Solo Project</span>
+            <span class="stat-l">Role</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-hero-media reveal">
+        <div class="media-frame">
+          <div class="gallery-media">
+            <img src="ScreenShot00008.png" alt="A.I.M. Research Facility hero shot">
+          </div>
+        </div>
+        <div class="about-badge">
+          <strong>Status</strong>
+          In Development
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="overview">
+  <div class="wrap">
+    <div class="section-tag">// quick overview</div>
+    <h2>What this project is about</h2>
+    <div class="section-divider"></div>
+
+    <div class="doc-grid">
+
+      <article class="doc-card reveal">
+        <div class="card-title">Summary</div>
+        <p class="doc-copy">
+          <strong>A.I.M. Research Facility – Sector 7</strong> is a <strong>single-point domination map</strong> for a
+          <strong>5v5 hero shooter</strong>. The design centers on a single control point that creates
+          <strong>repeated, high-intensity engagements</strong> around a readable central arena.
+          The goal was to create a layout that feels competitive and fair while still supporting
+          the spectacle, movement, and team synergy expected from modern hero shooters.
+        </p>
+      </article>
+
+      <article class="doc-card reveal">
+        <div class="card-title">Project Goal</div>
+        <p class="doc-copy">
+          The main objective was to design a blockout concept that emphasizes
+          <strong>strong central fights</strong>, <strong>balanced travel times</strong>, and
+          <strong>multiple re-entry routes</strong> into the point. The level is structured around
+          a readable central objective with flanks, controlled vertical access, and clear
+          engagement zones that support both fast decision-making and long-term mastery.
+        </p>
+      </article>
+
+      <article class="doc-card reveal">
+        <div class="card-title">My Role</div>
+        <p class="doc-copy">
+          I was responsible for the <strong>full level design pipeline</strong>, including
+          <strong>research</strong>, <strong>reference gathering</strong>, <strong>2D layout design</strong>,
+          <strong>flow analysis</strong>, <strong>blockout development</strong>, and
+          <strong>visual gameplay communication</strong>. I also explored interactive material ideas,
+          destructible-space readability, and objective-space presentation in UE5.
+        </p>
+      </article>
+
+      <article class="doc-card reveal">
+        <div class="card-title">Core Tools</div>
+        <div class="skills-list">
+          <span class="skill-tag">Unreal Engine 5</span>
+          <span class="skill-tag">Blueprints</span>
+          <span class="skill-tag">Third Person Template</span>
+          <span class="skill-tag">Level Design</span>
+          <span class="skill-tag">Blockout</span>
+          <span class="skill-tag">Material Prototyping</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+<section id="goals">
+  <div class="wrap">
+    <div class="section-tag">// goals & restrictions</div>
+    <h2>Design goals and constraints</h2>
+    <div class="section-divider"></div>
+
+    <div class="feature-stack">
+
+      <article class="feature-panel reveal">
+        <div class="card-title">Core goals</div>
+        <p class="card-desc">
+          This map was designed to create <strong>centralized team fights</strong> around one objective,
+          encourage <strong>rotations and re-engagements from multiple directions</strong>, and support
+          <strong>structured combat in controlled spaces</strong>. The intended experience rewards
+          <strong>positioning</strong>, <strong>timing</strong>, and <strong>team coordination</strong> rather than
+          chaotic, unreadable brawls.
+        </p>
+      </article>
+
+      <article class="feature-panel reveal">
+        <div class="card-title">Layout constraints</div>
+        <p class="card-desc">
+          To keep the map competitively fair and readable, I worked within a set of design constraints:
+          <strong>a single central objective</strong>, <strong>near-symmetrical team access</strong>,
+          <strong>at least three routes into the point</strong>, <strong>limited but meaningful verticality</strong>,
+          and <strong>balanced travel times</strong> from each spawn. These restrictions helped keep the
+          scope focused while grounding the design in hero-shooter fundamentals.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+<section id="research">
+  <div class="wrap">
+    <div class="section-tag">// research foundation</div>
+    <h2>Research and design pillars</h2>
+    <div class="section-divider"></div>
+
+    <div class="feature-stack">
+
+      <article class="feature-panel reveal">
+        <div class="card-tags">
+          <span class="card-tag">Research</span>
+          <span class="card-tag">Marvel Rivals</span>
+        </div>
+        <div class="card-title">Gameplay-first map philosophy</div>
+        <p class="card-desc">
+          My research focused on how <strong>Marvel Rivals</strong> approaches level design through
+          <strong>readability</strong>, <strong>multiple routes</strong>, <strong>hero expression</strong>,
+          and <strong>environmental interactivity</strong>. One of the main takeaways was that maps
+          should feel simple to understand at first glance while still enabling complex moment-to-moment
+          decision-making through movement, ability usage, and changing combat spaces.
+        </p>
+      </article>
+
+      <article class="feature-panel reveal">
+        <div class="card-tags">
+          <span class="card-tag">Flow</span>
+          <span class="card-tag">Combat</span>
+        </div>
+        <div class="card-title">Repeated engagements around one objective</div>
+        <p class="card-desc">
+          Because this is a domination map, the level was designed around
+          <strong>cyclical engagements</strong>: teams enter, contest, reposition, and re-enter the same
+          objective space from different lanes. This required clear route-framing, balanced timing windows,
+          and enough variation in approach paths to prevent the point from becoming a static choke.
+        </p>
+      </article>
+
+      <article class="feature-panel reveal">
+        <div class="card-tags">
+          <span class="card-tag">Readability</span>
+          <span class="card-tag">Interactivity</span>
+        </div>
+        <div class="card-title">Spectacle versus clarity</div>
+        <p class="card-desc">
+          A major design tension was balancing <strong>visual spectacle</strong> with <strong>gameplay clarity</strong>.
+          My references and notes highlighted how hero shooters benefit from dynamic spaces and destruction,
+          but only when those systems remain legible. That informed decisions around controlled verticality,
+          selective environmental emphasis, and clear objective-space communication.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+<section id="layout">
+  <div class="wrap">
+    <div class="section-tag">// map layout</div>
+    <h2>Top-down layout and combat flow</h2>
+    <div class="section-divider"></div>
+
+    <div class="gallery-grid">
+      <div class="gallery-card reveal">
+        <div class="gallery-media">
+          <img src="AIM Research Design Concept Diagram.png" alt="AIM Research Facility map concept">
+        </div>
+        <div class="gallery-caption">
+          Final top-down concept showing the main point, surrounding rooms, and key combat approach spaces.
+        </div>
+      </div>
+
+      <div class="gallery-card reveal">
+        <div class="gallery-media">
+          <img src="DR DOOM DOOMSTATDesign Concept Diagram.png" alt="AIM Research Facility flow diagram">
+        </div>
+        <div class="gallery-caption">
+          Early flow analysis identifying primary pathways, clash points, choke points, and health pack locations.
+        </div>
+      </div>
+
+      <div class="gallery-card reveal">
+        <div class="gallery-media">
+          <img src="Bifrost Garden Diagram.png" alt="AIM Research Facility alternative concept">
+        </div>
+        <div class="gallery-caption">
+          Exploratory top-down sketch used to test circulation, point pressure, and route symmetry.
+        </div>
+      </div>
+    </div>
+
+    <div class="doc-grid" style="margin-top: 2rem;">
+      <article class="doc-card reveal">
+        <div class="card-title">Main point</div>
+        <p class="doc-copy">
+          The central objective is intentionally exposed enough to create <strong>constant contest pressure</strong>,
+          but it is framed by surrounding geometry and adjacent cover spaces so teams can stage pushes,
+          collapse from multiple angles, and retake with coordinated timing.
+        </p>
+      </article>
+
+      <article class="doc-card reveal">
+        <div class="card-title">Route structure</div>
+        <p class="doc-copy">
+          The layout uses a <strong>multi-route structure</strong> with direct approaches, side entries, and
+          supporting flank paths. The goal was to ensure each team has meaningful decisions on entry,
+          retreat, and re-engagement without overcomplicating the silhouette of the map.
+        </p>
+      </article>
+
+      <article class="doc-card reveal">
+        <div class="card-title">Combat framing</div>
+        <p class="doc-copy">
+          Choke points and clash points were deliberately mapped to control where teams first collide,
+          where pressure builds, and where positional advantage matters most. Health pack placement
+          supports sustained skirmishes without undermining the importance of controlling the objective.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+<section id="features">
+  <div class="wrap">
+    <div class="section-tag">// design breakdown</div>
+    <h2>Key level design decisions</h2>
+    <div class="section-divider"></div>
+
+    <div class="feature-stack">
+
+      <article class="feature-panel reveal">
+        <div class="card-tags">
+          <span class="card-tag">Flow</span>
+          <span class="card-tag">Routes</span>
+        </div>
+        <div class="card-title">Three-direction pressure on point</div>
+        <p class="card-desc">
+          One of the most important goals was ensuring the point could be contested from
+          <strong>multiple directions</strong> without becoming visually noisy or tactically random.
+          This helps domination rounds stay active and gives teams more than one viable way
+          to break entrenched positions.
+        </p>
+      </article>
+
+      <article class="feature-panel reveal">
+        <div class="card-tags">
+          <span class="card-tag">Readability</span>
+          <span class="card-tag">Combat</span>
+        </div>
+        <div class="card-title">Readable central arena</div>
+        <p class="card-desc">
+          The center of the map is designed to feel <strong>contestable, open, and legible</strong>.
+          It is not a pure open circle; instead, surrounding structures and adjacent pockets create
+          moments of cover, line-of-sight denial, and tactical staging while preserving awareness
+          of where the fight is happening.
+        </p>
+      </article>
+
+      <article class="feature-panel reveal">
+        <div class="card-tags">
+          <span class="card-tag">Verticality</span>
+          <span class="card-tag">Hero Design</span>
+        </div>
+        <div class="card-title">Limited but meaningful verticality</div>
+        <p class="card-desc">
+          Vertical spaces are used selectively to support hero-shooter movement and high-ground decisions
+          without making the layout overwhelming. The aim was to create <strong>meaningful elevation choices</strong>
+          rather than constant layered chaos.
+        </p>
+      </article>
+
+      <article class="feature-panel reveal">
+        <div class="card-tags">
+          <span class="card-tag">Visual Design</span>
+          <span class="card-tag">Feedback</span>
+        </div>
+        <div class="card-title">Gameplay communication through materials</div>
+        <p class="card-desc">
+          Alongside the level layout, I explored material prototypes for
+          <strong>objective overlays</strong>, <strong>out-of-bounds barriers</strong>, and
+          <strong>destructible surface highlighting</strong>. These were intended to support a
+          faster hero-shooter readability standard where the environment communicates gameplay state clearly.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+  <section id="process">
+  <div class="wrap">
+    <div class="section-tag">// development process</div>
+    <h2>Process and iteration</h2>
+    <div class="section-divider"></div>
+
+    <div class="process-layout">
+      <div class="project-sidebar reveal">
+        <div class="sidebar-block">
+          <div class="link-label">Project Info</div>
+          <ul class="meta-list">
+            <li><span>Genre</span><strong>Hero Shooter</strong></li>
+            <li><span>Mode</span><strong>Domination</strong></li>
+            <li><span>Engine</span><strong>Unreal Engine 5</strong></li>
+            <li><span>Team Size</span><strong>1</strong></li>
+            <li><span>Focus</span><strong>Level Design / Blockout</strong></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-block">
+          <div class="link-label">Focus Areas</div>
+          <p class="doc-copy">
+            Route-framing, point-centric combat flow, readability, verticality, hero-movement support,
+            and environment feedback systems.
+          </p>
+        </div>
+      </div>
+
+      <div class="process-content">
+
+        <article class="timeline-item reveal visible-static">
+          <div class="timeline-date">Step 1</div>
+          <div class="timeline-title">Competitive map research</div>
+          <div class="timeline-body">
+            I began by researching <strong>Marvel Rivals</strong> and other competitive shooters to understand
+            how their maps structure rotation, objective pressure, and repeated engagements.
+            I focused on how readable layouts can still support complex hero interactions,
+            especially through route choice, combat ranges, and vertical access.
+          </div>
+        </article>
+
+        <article class="timeline-item reveal visible-static">
+          <div class="timeline-date">Step 2</div>
+          <div class="timeline-title">Design document and layout goals</div>
+          <div class="timeline-body">
+            Before blockout, I defined a clear design brief: one central control point,
+            at least three entry routes, near-symmetrical fairness, strong readability,
+            and controlled verticality. This design document became the foundation for
+            evaluating every layout decision and keeping the project scoped correctly.
+          </div>
+        </article>
+
+        <article class="timeline-item reveal visible-static">
+          <div class="timeline-date">Step 3</div>
+          <div class="timeline-title">2D routing and flow analysis</div>
+          <div class="timeline-body">
+            I then translated the brief into 2D layouts, marking
+            <strong>pathways</strong>, <strong>choke points</strong>, <strong>clash points</strong>, and
+            <strong>health pack locations</strong>. This stage was useful for simplifying the map into
+            its most important gameplay relationships before investing further in blockout and art direction.
+          </div>
+        </article>
+
+        <article class="timeline-item reveal visible-static">
+          <div class="timeline-date">Step 4</div>
+          <div class="timeline-title">Environment theme and reference gathering</div>
+          <div class="timeline-body">
+            Once the gameplay layout was established, I gathered references around
+            <strong>A.I.M. laboratories</strong>, <strong>Marvel sci-fi facilities</strong>, and clean, readable
+            interior spaces. These references helped shape the facility’s identity while keeping the
+            environment grounded in gameplay-first priorities.
+          </div>
+        </article>
+
+        <article class="timeline-item reveal visible-static">
+          <div class="timeline-date">Step 5</div>
+          <div class="timeline-title">Blockout, materials, and gameplay communication</div>
+          <div class="timeline-body">
+            In Unreal Engine 5, I began translating the 2D plan into a playable space and explored
+            supporting materials for objective readability, out-of-bounds barriers, and destructible-space
+            communication. These experiments helped reinforce the core goal of making dynamic hero-shooter
+            spaces readable under pressure.
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="references">
+  <div class="wrap">
+    <div class="section-tag">// references</div>
+    <h2>Visual inspiration and themes</h2>
+    <div class="section-divider"></div>
+
+    <div class="gallery-grid gallery-grid--two">
+      <div class="gallery-card reveal">
+        <button class="gallery-media pdf-media gallery-trigger" type="button" data-type="pdf" data-src="References 1.1.pdf">
+          <div class="pdf-thumb-icon">
+            <svg width="40" height="48" viewBox="0 0 40 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="48" rx="4" fill="rgba(0,255,225,0.07)"/><path d="M8 6h16l8 8v28a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" stroke="#00ffe1" stroke-width="1.5" fill="none"/><path d="M24 6v8h8" stroke="#00ffe1" stroke-width="1.5" fill="none"/><rect x="10" y="22" width="20" height="1.5" rx=".75" fill="#00ffe1" opacity=".5"/><rect x="10" y="27" width="16" height="1.5" rx=".75" fill="#00ffe1" opacity=".5"/><rect x="10" y="32" width="18" height="1.5" rx=".75" fill="#00ffe1" opacity=".5"/></svg>
+            <span class="pdf-filename">References 1.1.pdf</span>
+          </div>
+          <span class="media-overlay">Open PDF</span>
+        </button>
+        <div class="gallery-caption">
+          General reference board used to define visual language, material cues, readable sci-fi spaces,
+          and environmental themes.
+        </div>
+      </div>
+
+      <div class="gallery-card reveal">
+        <button class="gallery-media pdf-media gallery-trigger" type="button" data-type="pdf" data-src="References 2 AIM.pdf">
+          <div class="pdf-thumb-icon">
+            <svg width="40" height="48" viewBox="0 0 40 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="48" rx="4" fill="rgba(0,255,225,0.07)"/><path d="M8 6h16l8 8v28a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" stroke="#00ffe1" stroke-width="1.5" fill="none"/><path d="M24 6v8h8" stroke="#00ffe1" stroke-width="1.5" fill="none"/><rect x="10" y="22" width="20" height="1.5" rx=".75" fill="#00ffe1" opacity=".5"/><rect x="10" y="27" width="16" height="1.5" rx=".75" fill="#00ffe1" opacity=".5"/><rect x="10" y="32" width="18" height="1.5" rx=".75" fill="#00ffe1" opacity=".5"/></svg>
+            <span class="pdf-filename">References 2 AIM.pdf</span>
+          </div>
+          <span class="media-overlay">Open PDF</span>
+        </button>
+        <div class="gallery-caption">
+          A.I.M.-specific references used to shape branding, facility tone, and Marvel-inspired lab architecture.
+        </div>
+      </div>
+
+      <div class="gallery-card reveal">
+        <button class="gallery-media pdf-media gallery-trigger" type="button" data-type="pdf" data-src="Notes On Rivals Maps.pdf">
+          <div class="pdf-thumb-icon">
+            <svg width="40" height="48" viewBox="0 0 40 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="48" rx="4" fill="rgba(0,255,225,0.07)"/><path d="M8 6h16l8 8v28a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" stroke="#00ffe1" stroke-width="1.5" fill="none"/><path d="M24 6v8h8" stroke="#00ffe1" stroke-width="1.5" fill="none"/><rect x="10" y="22" width="20" height="1.5" rx=".75" fill="#00ffe1" opacity=".5"/><rect x="10" y="27" width="16" height="1.5" rx=".75" fill="#00ffe1" opacity=".5"/><rect x="10" y="32" width="18" height="1.5" rx=".75" fill="#00ffe1" opacity=".5"/></svg>
+            <span class="pdf-filename">Notes On Rivals Maps.pdf</span>
+          </div>
+          <span class="media-overlay">Open PDF</span>
+        </button>
+        <div class="gallery-caption">
+          Research notes on Marvel Rivals map structure, route readability, destruction, and engagement flow.
+        </div>
+      </div>
+
+      <div class="gallery-card reveal">
+        <button class="gallery-media pdf-media gallery-trigger" type="button" data-type="pdf" data-src="AIM Research Design Document.pdf">
+          <div class="pdf-thumb-icon">
+            <svg width="40" height="48" viewBox="0 0 40 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="48" rx="4" fill="rgba(0,255,225,0.07)"/><path d="M8 6h16l8 8v28a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" stroke="#00ffe1" stroke-width="1.5" fill="none"/><path d="M24 6v8h8" stroke="#00ffe1" stroke-width="1.5" fill="none"/><rect x="10" y="22" width="20" height="1.5" rx=".75" fill="#00ffe1" opacity=".5"/><rect x="10" y="27" width="16" height="1.5" rx=".75" fill="#00ffe1" opacity=".5"/><rect x="10" y="32" width="18" height="1.5" rx=".75" fill="#00ffe1" opacity=".5"/></svg>
+            <span class="pdf-filename">AIM Research Design Document.pdf</span>
+          </div>
+          <span class="media-overlay">Open PDF</span>
+        </button>
+        <div class="gallery-caption">
+          Full design document outlining the project brief, goals, layout constraints, and intended gameplay experience.
+        </div>
+      </div>
+    </div>
+
+    <article class="doc-card reveal" style="margin-top: 2rem;">
+      <div class="card-title">Reference direction</div>
+      <p class="doc-copy">
+        I used references from A.I.M. environments, Marvel facilities, and clean sci-fi laboratory interiors
+        to establish a clear visual identity for the space. The goal was to create an environment that
+        feels recognizably Marvel-inspired while still supporting the layout and readability demands of a
+        competitive hero-shooter map.
+      </p>
+    </article>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <div class="section-tag">// screenshots & media</div>
+    <h2>Gallery</h2>
+    <div class="section-divider"></div>
+
+    <div class="gallery-grid gallery-grid--two">
+
+      <!-- 00008 -->
+      <div class="gallery-card reveal">
+        <button class="gallery-media gallery-trigger" type="button" data-type="image" data-src="ScreenShot00008.png" data-alt="Central platform overview">
+          <img src="ScreenShot00008.png" alt="Central platform overview">
+        </button>
+        <div class="gallery-caption">
+          Central objective platform and surrounding routes, showing vertical layering and player approach options.
+        </div>
+      </div>
+
+      <!-- 00007 -->
+      <div class="gallery-card reveal">
+        <button class="gallery-media gallery-trigger" type="button" data-type="image" data-src="ScreenShot00007.png" data-alt="Top down layout">
+          <img src="ScreenShot00007.png" alt="Top down layout">
+        </button>
+        <div class="gallery-caption">
+          Top-down view highlighting overall layout symmetry, route distribution, and main objective placement.
+        </div>
+      </div>
+
+      <!-- 00009 -->
+      <div class="gallery-card reveal">
+        <button class="gallery-media gallery-trigger" type="button" data-type="image" data-src="ScreenShot00009.png" data-alt="Interior combat space">
+          <img src="ScreenShot00009.png" alt="Interior combat space">
+        </button>
+        <div class="gallery-caption">
+          Interior combat space with vertical cover and layered sightlines supporting mid-range engagements.
+        </div>
+      </div>
+
+      <!-- 00010 -->
+      <div class="gallery-card reveal">
+        <button class="gallery-media gallery-trigger" type="button" data-type="image" data-src="ScreenShot00010.png" data-alt="Ramp and cover transition">
+          <img src="ScreenShot00010.png" alt="Ramp and cover transition">
+        </button>
+        <div class="gallery-caption">
+          Ramp transition area connecting levels, designed to control pacing and player exposure.
+        </div>
+      </div>
+
+      <!-- 00011 -->
+      <div class="gallery-card reveal">
+        <button class="gallery-media gallery-trigger" type="button" data-type="image" data-src="ScreenShot00011.png" data-alt="Lower level arena">
+          <img src="ScreenShot00011.png" alt="Lower level arena">
+        </button>
+        <div class="gallery-caption">
+          Lower-level space providing alternate routes and flanking opportunities beneath the main objective.
+        </div>
+      </div>
+
+      <!-- 00012 -->
+      <div class="gallery-card reveal">
+        <button class="gallery-media gallery-trigger" type="button" data-type="image" data-src="ScreenShot00012.png" data-alt="Wide combat lane">
+          <img src="ScreenShot00012.png" alt="Wide combat lane">
+        </button>
+        <div class="gallery-caption">
+          Wide combat lane encouraging movement and repositioning while maintaining readable sightlines.
+        </div>
+      </div>
+
+      <!-- 00013 -->
+      <div class="gallery-card reveal">
+        <button class="gallery-media gallery-trigger" type="button" data-type="image" data-src="ScreenShot00013.png" data-alt="Vertical cover pillars">
+          <img src="ScreenShot00013.png" alt="Vertical cover pillars">
+        </button>
+        <div class="gallery-caption">
+          Vertical pillar structures used to break sightlines and create dynamic cover interactions.
+        </div>
+      </div>
+
+      <!-- 00014 -->
+      <div class="gallery-card reveal">
+        <button class="gallery-media gallery-trigger" type="button" data-type="image" data-src="ScreenShot00014.png" data-alt="Tunnel entrance">
+          <img src="ScreenShot00014.png" alt="Tunnel entrance">
+        </button>
+        <div class="gallery-caption">
+          Tunnel entry framing the objective, designed to guide player focus and create tension on approach.
+        </div>
+      </div>
+
+      <!-- 00015 -->
+      <div class="gallery-card reveal">
+        <button class="gallery-media gallery-trigger" type="button" data-type="image" data-src="ScreenShot00015.png" data-alt="Objective sightline">
+          <img src="ScreenShot00015.png" alt="Objective sightline">
+        </button>
+        <div class="gallery-caption">
+          Direct sightline toward the objective, as well as alternative routes, emphasizing clarity and player orientation within the space.
+        </div>
+      </div>
+
+      <!-- 00000 -->
+      <div class="gallery-card reveal">
+        <button class="gallery-media gallery-trigger" type="button" data-type="image" data-src="ScreenShot00000.png" data-alt="Overview shot">
+          <img src="ScreenShot00000.png" alt="Overview shot">
+        </button>
+        <div class="gallery-caption">
+          Early overview shot used to evaluate scale, spacing, and structural balance.
+        </div>
+      </div>
+
+      <!-- 00001 -->
+      <div class="gallery-card reveal">
+        <button class="gallery-media gallery-trigger" type="button" data-type="image" data-src="ScreenShot00001.png" data-alt="Cover and elevation">
+          <img src="ScreenShot00001.png" alt="Cover and elevation">
+        </button>
+        <div class="gallery-caption">
+          Cover and elevation changes used to support tactical positioning and movement choices.
+        </div>
+      </div>
+
+      <!-- 00002 -->
+      <div class="gallery-card reveal">
+        <button class="gallery-media gallery-trigger" type="button" data-type="image" data-src="ScreenShot00002.png" data-alt="Sightline control">
+          <img src="ScreenShot00002.png" alt="Sightline control">
+        </button>
+        <div class="gallery-caption">
+          Controlled sightlines ensuring visibility without overwhelming players with long-range exposure.
+        </div>
+      </div>
+
+      <!-- 00003 -->
+      <div class="gallery-card reveal">
+        <button class="gallery-media gallery-trigger" type="button" data-type="image" data-src="ScreenShot00003.png" data-alt="Mid-level platform">
+          <img src="ScreenShot00003.png" alt="Mid-level platform">
+        </button>
+        <div class="gallery-caption">
+          Mid-level platform providing additional engagement angles and movement variety.
+        </div>
+      </div>
+
+      <!-- 00004 -->
+      <div class="gallery-card reveal">
+        <button class="gallery-media gallery-trigger" type="button" data-type="image" data-src="ScreenShot00004.png" data-alt="Vertical layering">
+          <img src="ScreenShot00004.png" alt="Vertical layering">
+        </button>
+        <div class="gallery-caption">
+          Entrance to the facility, offering vertical layering. Used to create overlapping combat spaces and dynamic encounters.
+        </div>
+      </div>
+
+      <!-- 00005 -->
+      <div class="gallery-card reveal">
+        <button class="gallery-media gallery-trigger" type="button" data-type="image" data-src="ScreenShot00005.png" data-alt="Lower corridor">
+          <img src="ScreenShot00005.png" alt="Lower corridor">
+        </button>
+        <div class="gallery-caption">
+          Main Capture Point.
+        </div>
+      </div>
+
+      <!-- 00006 -->
+      <div class="gallery-card reveal">
+        <button class="gallery-media gallery-trigger" type="button" data-type="image" data-src="ScreenShot00006.png" data-alt="Combat approach path">
+          <img src="ScreenShot00006.png" alt="Combat approach path">
+        </button>
+        <div class="gallery-caption">
+          Approach path designed to gradually reveal the play space and guide player flow into engagements.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <section id="links">
+    <div class="wrap">
+      <div class="contact-inner project-links">
+        <div class="contact-text reveal">
+          <div class="section-tag">// project links</div>
+          <h2>Explore the build.</h2>
+          <p>
+            Here are some links related to the project
+          </p>
+        </div>
+
+        <div class="contact-links reveal">
+          <a href="https://github.com/HLeitch/Group29-PCG" target="_blank" class="contact-link-item">
+            <div class="link-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" class="gh-icon"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </div>
+            <div class="link-info">
+              <div class="link-label">Source Code</div>
+              <div class="link-value">GitHub repository</div>
+            </div>
+            <div class="link-arrow">↗</div>
+          </a>
+
+          <a href="https://youtu.be/D5XGZrtlHl0" target="_blank" class="contact-link-item">
+            <div class="link-icon">▶</div>
+            <div class="link-info">
+              <div class="link-label">Demo Video</div>
+              <div class="link-value">Watch on YouTube</div>
+            </div>
+            <div class="link-arrow">↗</div>
+          </a>
+
+          <a href="https://group-29.itch.io/procedural-weapon-generation-game" target="_blank" class="contact-link-item">
+            <div class="link-icon">🎮</div>
+            <div class="link-info">
+              <div class="link-label">Playable Build</div>
+              <div class="link-value">Play on itch.io</div>
+            </div>
+            <div class="link-arrow">↗</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Creative Portfolio
+    &nbsp;|&nbsp; <span>Emmanuel Ansong</span> &copy; 2026
+  </footer>
+
+  <!-- ── MEDIA MODAL ───────────────────────────────────────── -->
+  <div id="mediaModal" class="media-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Media viewer">
+    <button id="mediaModalClose" class="media-modal-close" aria-label="Close">&times;</button>
+    <div id="mediaModalInner" class="media-modal-inner"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

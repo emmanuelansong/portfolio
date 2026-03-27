@@ -116,3 +116,48 @@ function typeIt() {
   }
 }
 setTimeout(typeIt, 600);
+
+const modal = document.getElementById("mediaModal");
+  const modalInner = document.getElementById("mediaModalInner");
+  const modalClose = document.getElementById("mediaModalClose");
+  const triggers = document.querySelectorAll(".gallery-trigger");
+
+  function openModal(type, src, alt = "") {
+    if (type === "pdf") {
+      modalInner.innerHTML = `<iframe src="${src}#view=FitH" title="PDF viewer"></iframe>`;
+    } else {
+      modalInner.innerHTML = `<img src="${src}" alt="${alt}">`;
+    }
+
+    modal.classList.add("active");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeModal() {
+    modal.classList.remove("active");
+    modal.setAttribute("aria-hidden", "true");
+    modalInner.innerHTML = "";
+    document.body.style.overflow = "";
+  }
+
+  triggers.forEach((trigger) => {
+    trigger.addEventListener("click", () => {
+      openModal(
+        trigger.dataset.type,
+        trigger.dataset.src,
+        trigger.dataset.alt || ""
+      );
+    });
+  });
+
+  modalClose.addEventListener("click", closeModal);
+
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) closeModal();
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeModal();
+  });
+
